@@ -71,7 +71,6 @@ it('.route2() changes request body', () => {
       path: '/todos'
     }, (req) => {
       const requestBody = JSON.parse(req.body)
-      debugger
       req.body = JSON.stringify({
         ...requestBody,
         title: 'Wubba Lubba Dub Dub!'
